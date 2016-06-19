@@ -1,12 +1,29 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}">
-
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+>
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp">
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sysapp"
+                    android:id="@+id/sysapp" android:layout_column="0"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="userapp"
+                    android:id="@+id/userapp" android:layout_column="15"/>
+        </TableRow>
+    </TableLayout>
+    <ListView
+        android:id="@+id/lvApps"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
-</RelativeLayout>
+</LinearLayout>
