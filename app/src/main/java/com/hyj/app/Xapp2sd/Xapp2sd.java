@@ -9,9 +9,9 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class xapp2sd implements IXposedHookZygoteInit, IXposedHookLoadPackage {
+public class Xapp2sd implements IXposedHookZygoteInit, IXposedHookLoadPackage {
 
-    public static final String PACKAGE_NAME = xapp2sd.class.getPackage().getName();
+    public static final String PACKAGE_NAME = Xapp2sd.class.getPackage().getName();
     private static XSharedPreferences prefs;
 
     public static final boolean DEBUG = true;
